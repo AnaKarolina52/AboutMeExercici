@@ -6,6 +6,11 @@ android {
     compileSdkVersion 30
     buildToolsVersion "29.0.3"
 
+    buildFeatures {
+        dataBinding true
+
+    }
+
     defaultConfig {
         applicationId "com.example.aboutme"
         minSdkVersion 19
@@ -22,7 +27,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-}
+
+    }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
